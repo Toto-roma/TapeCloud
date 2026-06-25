@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -7,42 +7,49 @@
   <link rel="icon" href="images/TapeCloud.jpeg" type="image/jpeg" />
   <link rel="stylesheet" href="Styles/styles.css" />
 </head>
-<body>
-  <header class="top-bar">
-    <div class="brand-block">
-      <div class="brand-copy">
-        <p class="eyebrow">TAPECLOUD</p>
-        <h1>
-            <img class="title-logo" src="images/TapeCloud.jpeg" alt="TapeCloud logo" />
-        Reseñas de todo un poco 
-        </h1>
+<body class="portal-page">
+  <header class="portal-header">
+    <div>
+      <img class="auth-logo" src="images/TapeCloud.jpeg" alt="TapeCloud logo" />
+      <div>
+        <p class="eyebrow">Portal de aplicaciones</p>
+        <h1>Bienvenido a TapeCloud</h1>
       </div>
+    </div>
+    <div class="portal-actions">
+      <a class="text-link" href="inicioSesion.html">iniciar sesión</a>
+      <a class="button-outline" href="inicioSesion.html">Cerrar sesión</a>
     </div>
   </header>
 
-  <div class="split-screen">
-    <section class="split-panel left-panel tapeflix-card">
-      <div class="panel-content">
-        <p class="eyebrow">TAPEFLIX</p>
-        <h1>Películas y series</h1>
-        <a class="image-button" href="tapeflix.html">
-          <img class="panel-icon" src="images/TapeFlix.jpeg" alt="TapeFlix" />
-        </a>
-      </div>
+  <main class="portal-content">
+    <section class="apps-panel">
+      <p class="form-help">Accede a la applicacion que desee.</p>
+      <div class="apps-grid">
+        <article class="app-card">
+          <div class="app-logo app-logo-film">TF</div>
+          <h2>TapeFlix</h2>
+          <p>Catálogo de películas y series con reseñas y filtros inteligentes.</p>
+          <a class="primary-button" href="tapeflix.htm">Abrir</a>
+        </article>
+        <article class="app-card">
+          <div class="app-logo app-logo-music">TB</div>
+          <h2>TapeBeat</h2>
+          <p>Explora playlists y tendencias musicales en tu espacio privado.</p>
+          <a class="primary-button" href="tapebeat.htm">Abrir</a>
+        </article>
+       </div>
+      
     </section>
 
-    <section class="split-panel right-panel">
-      <div class="panel-content">
-        <p class="eyebrow">TAPEBEAT</p>
-        <h1>Explora la música</h1>
-        <p>Accede a las aplicaciones cliente desde el hub central de autenticación y gestión de la plataforma.</p>
-        <a class="split-button outline" href="tapebeat.html">Ir a TapeBeat</a>
+    <aside class="profile-summary">
+      <div class="card">
+        <p class="eyebrow">Perfil</p>
+        <h2>Usuario invitado</h2>
+        <p>Cambia tu contraseña o actualiza datos básicos desde aquí.</p>
+        <a class="text-link" href="change-password.html">cambiar contraseña</a>
       </div>
-    </section>
-  </div>
-
-  <footer class="footer footer-split">
-    <p>TapeCloud · Versión 1.0 · Junio 2026 </p>
-  </footer>
+    </aside>
+  </main>
 </body>
 </html>
